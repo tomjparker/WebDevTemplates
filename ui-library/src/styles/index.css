@@ -1,7 +1,7 @@
-/* essentially css render order */
+/* essentially css render order, after that the paritals (base), then the tokens, then base, with utilities 
+last so they can act as an override */
 @layer reset, tokens, base, components, utilities; 
 
-/* “partials” */
 @import "./base/reset.css" layer(reset);
 
 @import "./tokens/colors.css" layer(tokens);
@@ -10,7 +10,6 @@
 
 @import "./base/globals.css" layer(base);
 
-/* utilities last so they can override */
 @import "./utilities/layout.css" layer(utilities);
 @import "./utilities/spacing.css" layer(utilities);
 
@@ -21,7 +20,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #245424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
