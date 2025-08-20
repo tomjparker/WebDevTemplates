@@ -12,6 +12,7 @@ last so they can act as an override */
 
 @import "./utilities/layout.css" layer(utilities);
 @import "./utilities/spacing.css" layer(utilities);
+@import "./utilities/flex.css" layer(utilities);
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
