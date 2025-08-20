@@ -4,15 +4,19 @@ last so they can act as an override */
 
 @import "./base/reset.css" layer(reset);
 
+@import "./tokens/breakpoints.css" layer(tokens);
 @import "./tokens/colors.css" layer(tokens);
+@import "./tokens/sizing.css" layer(tokens);
 @import "./tokens/spacing.css" layer(tokens);
 @import "./tokens/typography.css" layer(tokens);
 
 @import "./base/globals.css" layer(base);
 
+@import "./utilities/cards.css" layer(utilities);
+@import "./utilities/flex.css" layer(utilities);
 @import "./utilities/layout.css" layer(utilities);
 @import "./utilities/spacing.css" layer(utilities);
-@import "./utilities/flex.css" layer(utilities);
+@import "./utilities/surface.css" layer(utilities);
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

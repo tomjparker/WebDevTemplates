@@ -54,29 +54,39 @@ export default function App() {
         style={{ ['--stack-gap' as any]: 'var(--space-7)' }}
       >
         <section
-          className="grid"
-          style={{ ['--grid-min' as any]: '18rem', ['--grid-gap' as any]: 'var(--space-6)' }}
+          className="surface stack"
+          style={{ ['--stack-gap' as any]: 'var(--space-6)' }}
         >
-          <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
-            <p className="eyebrow muted">Primitive</p>
-            <h3 className="tracking-tight">Stack</h3>
-            <p>Vertical rhythm with <code>gap</code>, great for forms and sections.</p>
-          </article>
+          <h2 className="tracking-tight">Primitives</h2>
 
-          <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
-            <p className="eyebrow muted">Primitive</p>
-            <h3 className="tracking-tight">Cluster</h3>
-            <p>Inline groups with wrapping + gaps for buttons, chips, tags.</p>
-            <div className="cluster" style={{ ['--cluster-gap' as any]: 'var(--space-2)' }}>
-              <button>Alpha</button><button>Beta</button><button>Gamma</button>
-            </div>
-          </article>
+          <div
+            className="grid"
+            style={{
+              ['--grid-min' as any]: '18rem',
+              ['--grid-gap' as any]: 'var(--space-6)'
+            }}
+          >
+            <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
+              <p className="eyebrow muted">Primitive</p>
+              <h3 className="tracking-tight">Stack</h3>
+              <p>Vertical rhythm with <code>gap</code>, great for forms and sections.</p>
+            </article>
 
-          <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
-            <p className="eyebrow muted">Primitive</p>
-            <h3 className="tracking-tight">Grid</h3>
-            <p>Auto-fit responsive columns via <code>--grid-min</code>.</p>
-          </article>
+            <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
+              <p className="eyebrow muted">Primitive</p>
+              <h3 className="tracking-tight">Cluster</h3>
+              <p>Inline groups with wrapping + gaps for buttons, chips, tags.</p>
+              <div className="cluster" style={{ ['--cluster-gap' as any]: 'var(--space-2)' }}>
+                <button>Alpha</button><button>Beta</button><button>Gamma</button>
+              </div>
+            </article>
+
+            <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
+              <p className="eyebrow muted">Primitive</p>
+              <h3 className="tracking-tight">Grid</h3>
+              <p>Auto-fit responsive columns via <code>--grid-min</code>.</p>
+            </article>
+          </div>
         </section>
 
         {/* Sidebar layout */}
