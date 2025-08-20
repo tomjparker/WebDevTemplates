@@ -32,8 +32,20 @@ export default function App() {
             } as React.CSSProperties
           }
         >
-          <div className="frame" style={{ ['--frame-ratio' as any]: '1 / 1' }}>
-            <img src={reactLogo} alt="React logo" />
+          <div
+            className="frame pad ring"
+            style={{ ['--frame-ratio' as any]: '1 / 1' }}
+          >
+            <img
+              className="img-contain"
+              src={reactLogo}
+              alt="React logo"
+              width={256}
+              height={256}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
 
           <h1 className="tracking-tight align-center">Template Site</h1>

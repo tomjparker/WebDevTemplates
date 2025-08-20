@@ -14,6 +14,7 @@ last so they can act as an override */
 
 @import "./utilities/cards.css" layer(utilities);
 @import "./utilities/flex.css" layer(utilities);
+@import "./utilities/image.css" layer(utilities);
 @import "./utilities/layout.css" layer(utilities);
 @import "./utilities/spacing.css" layer(utilities);
 @import "./utilities/surface.css" layer(utilities);
