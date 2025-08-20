@@ -1,9 +1,32 @@
-#root {
+:root {
+  /* You can add color tokens later; these are layout-adjacent */
+  --radius: 0.5rem;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+
+body {
+  min-block-size: 100dvb;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background: Canvas;
+  color: CanvasText;
+}
+
+/* A generic page wrapper */
+.page {
+  display: block;
+  min-block-size: 100dvb;
+}
+
+/* Center longform content by default (optional) */
+.prose {
+  margin-inline: auto;
+  max-inline-size: 65ch;
+  padding-inline: var(--container-inline-padding);
+}
+
 
 .logo {
   height: 6em;
@@ -13,9 +36,6 @@
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -37,6 +57,3 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}

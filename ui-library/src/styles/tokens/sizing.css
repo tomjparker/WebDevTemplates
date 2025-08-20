@@ -1,0 +1,7 @@
+:root {
+  /* Container + gutters */
+  --container-max-width: 72rem;  /* ~1152px */
+  --container-inline-padding: clamp(1rem, 3vw, 2rem);
+  --grid-gap: var(--space-5);
+  --grid-min: 16rem;    /* Column size min */
+}

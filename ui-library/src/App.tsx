@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="page container">
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
