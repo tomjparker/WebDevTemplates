@@ -1,3 +1,19 @@
+/* essentially css render order */
+@layer reset, tokens, base, components, utilities; 
+
+/* “partials” */
+@import "./base/reset.css" layer(reset);
+
+@import "./tokens/colors.css" layer(tokens);
+@import "./tokens/spacing.css" layer(tokens);
+@import "./tokens/typography.css" layer(tokens);
+
+@import "./base/globals.css" layer(base);
+
+/* utilities last so they can override */
+@import "./utilities/layout.css" layer(utilities);
+@import "./utilities/spacing.css" layer(utilities);
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
