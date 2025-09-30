@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import Eclipse from "./assets"
 
 /**
- * Assumes you've imported your global CSS once in main.tsx:
- *   import './styles/index.css'
+ * Imported global CSS once already in main.tsx:
  */
 export default function App() {
   const [count, setCount] = useState(0)
@@ -32,10 +31,7 @@ export default function App() {
             } as React.CSSProperties
           }
         >
-          <div
-            className="frame pad ring"
-            style={{ ['--frame-ratio' as any]: '1 / 1' }}
-          >
+          <div>
             <img
               className="img-contain"
               src={reactLogo}
@@ -46,6 +42,7 @@ export default function App() {
               decoding="async"
               fetchPriority="high"
             />
+            <svg src={Eclipse}/>
           </div>
 
           <h1 className="tracking-tight align-center">Template Site</h1>
@@ -74,26 +71,26 @@ export default function App() {
           <div
             className="grid"
             style={{
-              ['--grid-min' as any]: '18rem',
-              ['--grid-gap' as any]: 'var(--space-6)'
+              '--grid-min': '18rem',
+              '--grid-gap': 'var(--space-6)'
             }}
           >
-            <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
+            <article className="card stack" style={{ '--stack-gap': 'var(--space-3)' }}>
               <p className="eyebrow muted">Primitive</p>
               <h3 className="tracking-tight">Stack</h3>
               <p>Vertical rhythm with <code>gap</code>, great for forms and sections.</p>
             </article>
 
-            <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
+            <article className="card stack" style={{ '--stack-gap': 'var(--space-3)' }}>
               <p className="eyebrow muted">Primitive</p>
               <h3 className="tracking-tight">Cluster</h3>
               <p>Inline groups with wrapping + gaps for buttons, chips, tags.</p>
-              <div className="cluster" style={{ ['--cluster-gap' as any]: 'var(--space-2)' }}>
+              <div className="cluster" style={{ '--cluster-gap': 'var(--space-2)' }}>
                 <button>Alpha</button><button>Beta</button><button>Gamma</button>
               </div>
             </article>
 
-            <article className="card stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
+            <article className="card stack" style={{ '--stack-gap': 'var(--space-3)' }}>
               <p className="eyebrow muted">Primitive</p>
               <h3 className="tracking-tight">Grid</h3>
               <p>Auto-fit responsive columns via <code>--grid-min</code>.</p>
@@ -102,8 +99,8 @@ export default function App() {
         </section>
 
         {/* Sidebar layout */}
-        <section className="sidebar" style={{ ['--sidebar-gap' as any]: 'var(--space-6)' }}>
-          <aside className="stack" style={{ ['--stack-gap' as any]: 'var(--space-3)' }}>
+        <section className="sidebar" style={{ '--sidebar-gap': 'var(--space-6)' }}>
+          <aside className="stack" style={{ '--stack-gap': 'var(--space-3)' }}>
             <h4 className="tracking-tight">Filters</h4>
             <label className="flex row items-center gap-2">
               <input type="checkbox" /> Compact spacing
@@ -113,7 +110,7 @@ export default function App() {
             </label>
           </aside>
 
-          <div className="grid" style={{ ['--grid-min' as any]: '15rem' }}>
+          <div className="grid" style={{ '--grid-min': '15rem' }}>
             <article className="card">Result A</article>
             <article className="card">Result B</article>
             <article className="card">Result C</article>
@@ -122,7 +119,7 @@ export default function App() {
         </section>
 
         {/* Switcher: row -> column under threshold */}
-        <section className="switcher" style={{ ['--switcher-threshold' as any]: '28rem' }}>
+        <section className="switcher" style={{ '--switcher-threshold': '28rem' }}>
           <div className="card">Panel 1</div>
           <div className="card">Panel 2</div>
           <div className="card">Panel 3</div>
@@ -132,7 +129,7 @@ export default function App() {
       {/* Footer */}
       <footer
         className="container cluster"
-        style={{ ['--cluster-justify' as any]: 'space-between' }}
+        style={{ '--cluster-justify': 'space-between' }}
       >
         <small className="muted">© {new Date().getFullYear()} You</small>
         <div className="cluster gap-2">

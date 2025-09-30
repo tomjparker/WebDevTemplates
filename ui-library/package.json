@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
+    "@svgr/webpack": "^8.1.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react-swc": "^4.0.0",
@@ -29,16 +30,13 @@
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
   },
-
   "browserslist": [
     ">=0.5%",
     "last 2 versions",
     "not dead",
     "not op_mini all"
   ],
-
   "sideEffects": [
     "**/*.css"
   ]
 }
-
