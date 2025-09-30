@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import Eclipse from "./assets"
+import { useState } from 'react';
+// import Eclipse from "@/assets";
+// import Sun from "@/assets/sun-icon.png";
 
 /**
  * Imported global CSS once already in main.tsx:
@@ -28,21 +29,20 @@ export default function App() {
             {
               '--center-max': '70ch',
               '--stack-gap': 'var(--space-6)',
-            } as React.CSSProperties
-          }
+            }}
         >
           <div>
             <img
               className="img-contain"
-              src={reactLogo}
-              alt="React logo"
+              src={"../public/sun.jpg"}
+              alt="sun icon"
               width={256}
               height={256}
               loading="eager"
               decoding="async"
               fetchPriority="high"
             />
-            <svg src={Eclipse}/>
+            {/* <svg src={Eclipse}/> */}
           </div>
 
           <h1 className="tracking-tight align-center">Template Site</h1>
@@ -60,11 +60,11 @@ export default function App() {
       {/* Feature grid */}
       <main
         className="container stack"
-        style={{ ['--stack-gap' as any]: 'var(--space-7)' }}
+        style={{ '--stack-gap': 'var(--space-7)' }}
       >
         <section
           className="surface stack"
-          style={{ ['--stack-gap' as any]: 'var(--space-6)' }}
+          style={{ '--stack-gap': 'var(--space-6)' }}
         >
           <h2 className="tracking-tight">Primitives</h2>
 
@@ -131,7 +131,7 @@ export default function App() {
         className="container cluster"
         style={{ '--cluster-justify': 'space-between' }}
       >
-        <small className="muted">© {new Date().getFullYear()} You</small>
+        <small className="muted">© {new Date().getFullYear()} Tom Parker</small>
         <div className="cluster gap-2">
           <a href="#" className="text-sm">Twitter</a>
           <a href="#" className="text-sm">Discord</a>
